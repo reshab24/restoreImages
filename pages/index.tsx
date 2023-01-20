@@ -5,7 +5,6 @@ import Link from "next/link";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import SquigglyLines from "../components/SquigglyLines";
-import { Testimonials } from "../components/Testimonials";
 
 const Home: NextPage = () => {
   return (
@@ -44,34 +43,7 @@ const Home: NextPage = () => {
         >
           Restore your photos &rarr;
         </Link>
-        <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6">
-          <div className="flex flex-col space-y-10 mt-4 mb-16">
-            <div className="flex sm:space-x-2 sm:flex-row flex-col">
-              <div>
-                <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
-                <Image
-                  alt="Original photo of my bro"
-                  src="/michael.jpg"
-                  className="w-96 h-96 rounded-2xl"
-                  width={400}
-                  height={400}
-                />
-              </div>
-              <div className="sm:mt-0 mt-8">
-                <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
-                <Image
-                  alt="Restored photo of my bro"
-                  width={400}
-                  height={400}
-                  src="/michael-new.jpg"
-                  className="w-96 h-96 rounded-2xl sm:mt-0 mt-2"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
       </main>
-      <Testimonials />
       <Footer />
     </div>
   );
